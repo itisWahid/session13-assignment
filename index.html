@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">CALCULATOR</h1>
+    <div class="main-frame">
+      <div class="result-part">
+        <input class="number-input" id="input-field" type="text" value="0" />
+      </div>
+      <div class="number-pad">
+        <div class="btn-row">
+          <button onclick="input1()" class="btn-item" id="1">
+            <h3>1</h3>
+          </button>
+          <button class="btn-item" onclick="input2()" id="2"><h3>2</h3></button>
+          <button class="btn-item" onclick="input3()" id="3"><h3>3</h3></button>
+          <button class="btn-item" onclick="operateDiv()" id="/">
+            <h3>/</h3>
+          </button>
+        </div>
+        <div class="btn-row">
+          <button class="btn-item" onclick="input4()" id="4"><h3>4</h3></button>
+          <button class="btn-item" onclick="input5()" id="5"><h3>5</h3></button>
+          <button class="btn-item" onclick="input6()" id="6"><h3>6</h3></button>
+          <button class="btn-item" onclick="operateMul()" id="*">
+            <h3>*</h3>
+          </button>
+        </div>
+        <div class="btn-row">
+          <button class="btn-item" onclick="input7()" id="7"><h3>7</h3></button>
+          <button class="btn-item" onclick="input8()" id="8"><h3>8</h3></button>
+          <button class="btn-item" onclick="input9()" id="9"><h3>9</h3></button>
+          <button class="btn-item" onclick="operateMin()" id="-">
+            <h3>-</h3>
+          </button>
+        </div>
+        <div class="btn-row">
+          <button class="btn-item" onclick="clearInput()" id="C">
+            <h3>C</h3>
+          </button>
+          <button class="btn-item" onclick="input0()" id="0"><h3>0</h3></button>
+          <button class="btn-item" onclick="calculate()" id="=">
+            <h3>=</h3>
+          </button>
+          <button class="btn-item" onclick="operateSum()" id="+">
+            <h3>+</h3>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="functions.js" />
+  </body>
+</html>
